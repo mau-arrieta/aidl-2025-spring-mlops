@@ -22,7 +22,7 @@ class MyDataset(torch.utils.data.Dataset):
         sample = Image.open(path)
         if self.transform:
             sample = self.transform(sample)
-            print("\ntransformed")
+            #print("\ntransformed")
 
         
         return sample,code-1
